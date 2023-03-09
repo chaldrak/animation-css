@@ -735,10 +735,10 @@ section {
     inset: 35px;
     background: linear-gradient(#2196f3, #e91e63);
     border-radius: 50%;
-    animation: animate 2s linear infinite;
+    animation: clock 2s linear infinite;
 }
 
-@keyframes animate {
+@keyframes clock {
     0% {
         transform: rotate(360deg);
     }
