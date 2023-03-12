@@ -8,6 +8,7 @@
 
 body {
     width: 100%;
+    max-width: 100vw;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -28,7 +29,7 @@ section {
 }
 
 .section-1 .stroke {
-    font-size: 190px;
+    font-size: calc(100vw / 6);
     line-height: 100px;
     text-transform: uppercase;
     color: transparent;
@@ -975,6 +976,7 @@ section {
 .section-14 {
     background-color: #000;
     font-family: 'Poppins';
+    border-top: 1px solid white;
 }
 
 .section-14 .loader {
@@ -1012,10 +1014,11 @@ section {
     font-family: 'Poppins';
     position: relative;
     overflow: hidden;
+    border-top: 1px solid white;
 }
 
 .section-15 h2 {
-    font-size: 10em;
+    font-size: calc(100vw / 10);
     color: #fff;
     text-transform: uppercase;
     text-align: center;
