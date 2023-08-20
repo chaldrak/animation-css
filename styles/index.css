@@ -498,7 +498,7 @@ section {
     gap: 80px;
 }
 
-.card {
+.section-9 .card {
     position: relative;
     width: 350px;
     height: 180px;
@@ -506,18 +506,18 @@ section {
     transition: 0.5s;
 }
 
-.card:hover {
+.section-9 .card:hover {
     height: 450px;
 }
 
-.card .lines {
+.section-9 .card .lines {
     position: absolute;
     inset: 0;
     background: #000;
     overflow: hidden;
 }
 
-.card .lines::before {
+.section-9 .card .lines::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -529,7 +529,7 @@ section {
     animation-play-state: paused;
 }
 
-.card:hover .lines::before {
+.section-9 .card:hover .lines::before {
     animation-play-state: running;
 }
 
@@ -542,14 +542,14 @@ section {
     }
 }
 
-.card .lines:after {
+.section-9 .card .lines:after {
     content: '';
     position: absolute;
     inset: 3px;
     background: #292929;
 }
 
-.card .imgBx {
+.section-9 .card .imgBx {
     position: absolute;
     top: -60px;
     left: 50%;
@@ -565,13 +565,13 @@ section {
     align-items: center;
 }
 
-.card:hover .imgBx {
+.section-9 .card:hover .imgBx {
     top: 25px;
     width: 200px;
     height: 20 0px;
 }
 
-.card .imgBx::before {
+.section-9 .card .imgBx::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -584,7 +584,7 @@ section {
     animation-play-state: paused;
 }
 
-.card:hover .imgBx::before {
+.section-9 .card:hover .imgBx::before {
     animation-play-state: running;
 }
 
@@ -597,14 +597,14 @@ section {
     }
 }
 
-.card .imgBx:after {
+.section-9 .card .imgBx:after {
     content: '';
     position: absolute;
     inset: 3px;
     background: #292929;
 }
 
-.card .imgBx img {
+.section-9 .card .imgBx img {
     position: absolute;
     width: 100px;
     z-index: 1;
@@ -613,11 +613,11 @@ section {
     transition: 0.5s;
 }
 
-.card:hover .imgBx img {
+.section-9 .card:hover .imgBx img {
     opacity: 1;
 }
 
-.card .content {
+.section-9 .card .content {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -627,7 +627,7 @@ section {
     overflow: hidden;
 }
 
-.card .content .details {
+.section-9 .card .content .details {
     padding: 30px 20px;
     text-align: center;
     width: 100%;
@@ -635,28 +635,28 @@ section {
     transform: translateY(145px);
 }
 
-.card:hover .content .details {
+.section-9 .card:hover .content .details {
     transform: translateY(0px);
 }
 
-.card .content .details h2 {
+.section-9 .card .content .details h2 {
     font-size: 1.5rem;
     font-weight: 500;
     color: #45f3ff;
     line-height: 1.2em;
 }
 
-.card .content .details p {
+.section-9 .card .content .details p {
     color: #fff;
     opacity: 0;
     transition: 0.5s;
 }
 
-.card:hover .content .details p {
+.section-9 .card:hover .content .details p {
     opacity: 1;
 }
 
-.card .content .details a {
+.section-9 .card .content .details a {
     display: inline-block;
     padding: 8px 15px;
     background: #45f3ff;
@@ -668,7 +668,7 @@ section {
     transition: 0.5s;
 }
 
-.card:hover .content .details a {
+.section-9 .card:hover .content .details a {
     opacity: 1;
 }
 
@@ -1130,4 +1130,66 @@ section {
 .section-16 article p {
     color: #fff;
     text-align: justify;
+}
+
+/* Section seventeen */
+.section-17 {
+    background: radial-gradient(#444, #222);
+    font-family: 'Poppins';
+    border-top: 1px solid white;
+}
+
+.section-17 .card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.section-17 .card .rating {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section-17 .card .rating .block {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #000;
+    left: 50%;
+    transform-origin: 50% 100px;
+    opacity: 0;
+    animation: pulse 0.1s linear forwards;
+}
+
+@keyframes pulse {
+    to {
+        opacity: 1;
+    }
+}
+
+.section17 .card .rating .block:first-child {
+    background-color: #0f0;
+    box-shadow: 0 0 15px #0f0, 0 0 30px #0f0;
+}
+
+.section-17 .card .rating h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-17 .card .rating h2 span {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.section-17 .card .rating h2 sup {
+    font-size: 1.5em;
+    font-weight: 300;
 }
